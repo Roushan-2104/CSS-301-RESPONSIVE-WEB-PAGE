@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "ZCOOL KuaiLe", cursive;
+}
+body {
+  background-color: black;
+  color: white;
+}
+section {
+  display: flex;
+  flex-wrap: wrap;
+}
+section div {
+  border: 2px solid white;
+  align-self: flex-start;
+}
+section #nav {
+  flex-basis: 100%;
+  background-color: white;
+  color: black;
+  height: 110px;
+}
+
+#nav p {
+  padding: 10px;
+  word-spacing: 3px;
+  font-size: 30px;
+  padding-left: 40%;
+  overflow: hidden;
+}
+section div p a img {
+  margin-left: 70px;
+  flex-basis: 40%;
+}
+section #side {
+  flex-basis: 25%;
+  transition: flex-basis 1s;
+}
+section #content {
+  flex-basis: 75%;
+  font-size: 20px;
+  transition: flex-basis 1s;
+}
+@media (max-width: 1000px) {
+  section #side {
+    flex-basis: 100%;
+    transition: 1s;
+  }
+  section #content {
+    flex-basis: 100%;
+    transition: 1s;
+  }
+}
+@media (max-width: 700px) {
+  section #side {
+    display: none;
+  }
+}
